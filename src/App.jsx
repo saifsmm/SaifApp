@@ -221,7 +221,7 @@ function MoneyScreen({ data, onUpdate }) {
       {/* Sheets */}
       {sheet === "income" && (
         <Sheet title="Add Income" onClose={() => setSheet(null)}>
-          <Field label="Source / Description" placeholder="e.g. Commission — Al Barsha deal" value={incomeForm.label} onChange={e => setIncomeForm(p => ({...p, label:e.target.value}))} />
+          <Field label="Source / Description" placeholder="e.g. Main Salary" value={incomeForm.label} onChange={e => setIncomeForm(p => ({...p, label:e.target.value}))} />
           <Field label="Amount (AED)" type="number" placeholder="5000" value={incomeForm.amount} onChange={e => setIncomeForm(p => ({...p, amount:e.target.value}))} />
           <PBtn label="Add to Income" onClick={addIncome} />
         </Sheet>
